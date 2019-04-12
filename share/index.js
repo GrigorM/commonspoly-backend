@@ -1,8 +1,8 @@
 var ShareDB = require('sharedb');
 var WebSocket = require('ws');
 var WebSocketJSONStream = require('websocket-json-stream');
-const db = require('sharedb-mongo')('mongodb://mongo:27017/commonspoly');
-// const db = require('sharedb-mongo')('mongodb+srv://grgml:commonspoly@cluster0-pv54n.gcp.mongodb.net/test?retryWrites=true');
+// const db = require('sharedb-mongo')('mongodb://mongo:27017/commonspoly');
+const db = require('sharedb-mongo')('mongodb://heroku_lmn3f2ph@ds239206.mlab.com:39206/heroku_lmn3f2ph');
 
 
 // db user / password -> grgml / commonspoly

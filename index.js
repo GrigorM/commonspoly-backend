@@ -10,13 +10,15 @@ var WebSocketJSONStream = require('websocket-json-stream');
 
 // Create a web server to serve files and listen to WebSocket connections
 var app = express();
+const port = process.env.PORT || 9001;
+
 app.use(express.static('static'));
 // var server = http.createServer(app);
 var server2 = http.createServer(app);
 
 // server.listen(9000);
-server2.listen(9001);
-console.log('Listening on http://localhost:9000');
+server2.listen(port);
+console.log(`Listening on http://localhost:${port}`);
 
 // module.exports.server = server;
 
