@@ -14,6 +14,11 @@ const port = process.env.PORT || 9001;
 
 app.use(express.static('static'));
 // var server = http.createServer(app);
+
+app.get('/', function (req, res) {
+  res.sendFile('/client/index.html')
+})
+
 var server2 = http.createServer(app);
 
 // server.listen(9000);
